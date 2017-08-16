@@ -1,0 +1,22 @@
+{
+  "name": "@wordpress/docutron",
+  "version": "0.1.0-beta.0",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "markdown-it": "^8.3.1",
+    "markdown-it-prism": "^1.1.1",
+    "markdown-it-toc-and-anchor": "^4.1.2",
+    "prismjs": "^1.6.0",
+    "raw-loader": "^0.5.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.1.1",
+    "react-scripts": "1.0.10",
+    "react-snapshot": "^1.1.0",
+    "store": "^2.0.12"
+  },
+  "devDependencies": {},
+  "bin": {
+    "docutron": "./bin/cli.js"
+  }
+}

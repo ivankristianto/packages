@@ -28,6 +28,8 @@
     "test:coverage-ci": "jest --coverage && codecov",
     "test:watch": "jest --watch",
     "publish:dev": "npm run build-clean && npm run build && lerna publish --npm-tag next",
-    "publish:prod": "npm run build-clean && npm run build && lerna publish"
+    "publish:prod": "npm run build-clean && npm run build && lerna publish",
+    "docs:start": "./packages/docutron/bin/cli.js start",
+    "docs:build": "./packages/docutron/bin/cli.js build"
   }
 }
