@@ -25,6 +25,7 @@ const BUILD_DIR = {
 	module: 'build-module',
 };
 const DONE = chalk.reset.inverse.bold.green( ' DONE ' );
+const EXCLUDED_PACKAGES = [ 'docutron' ];
 
 /**
  * Babel Configuration
@@ -57,7 +58,7 @@ function getAllPackages() {
 	return fs
 		.readdirSync( PACKAGES_DIR )
 		.map( ( file ) => path.resolve( PACKAGES_DIR, file ) )
-		.filter( ( f ) => fs.lstatSync( path.resolve( f ) ).isDirectory() );
+		.filter( ( f ) => fs.lstatSync( path.resolve( f ) ).isDirectory() && EXCLUDED_PACKAGES.indexOf( getPackageName( f ) ) === -1 );
 }
 
 /**
